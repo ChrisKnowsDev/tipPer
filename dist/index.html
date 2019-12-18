@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/69d25c3dbf.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.min.css" />
   <title>tipPer</title>
 </head>
 
@@ -19,20 +19,15 @@
     <!-- Tip form -->
     <form id="tip-form">
       <div class="group">
-        <i class="fas fa-dollar-sign"></i>
-        <input type="number" id="bill-input" placeholder="Bill Amount">
+        <!-- <i class="fas fa-dollar-sign"></i> -->
+        <input type="number" id="bill-input" placeholder="Bill Amount" />
       </div>
 
       <div class="group">
-        <ul>
-          <li><a href="#">5%</a></li>
-          <li><a href="#">10%</a></li>
-          <li><a href="#">15%</a></li>
-          <li><a href="#">20%</a></li>
-          <li><a href="#">25%</a></li>
-        </ul>
+        <input type="number" id="tip-input" placeholder="Tip Amount" />
         <span id="tip-output"></span>
       </div>
+      <input type="submit" value="Submit" id="submit" class="btn-primary" />
     </form>
 
     <!-- Results  -->
@@ -40,12 +35,12 @@
       <h3>Results</h3>
       <div class="group">
         <span>Tip Amount</span>
-        <input type="number" id="results-tip" disabled>
+        <input type="number" id="tip-results" disabled />
       </div>
 
       <div class="group">
         <span>Total With Tip</span>
-        <input type="number" id="results-total" disabled>
+        <input type="number" id="bill-total" disabled />
       </div>
     </div>
   </div>
