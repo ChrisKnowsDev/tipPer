@@ -1,3 +1,6 @@
+@import 'config';
+@import 'utility';
+
 // Base Elements
 * {
   margin: 0;
@@ -7,4 +10,21 @@
 
 body {
   font-family: 'Courier Prime', monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Form
+.container {
+  text-align: center;
+  height: 100vh;
+  margin-top: 20vh;
+  max-width: 900px;
+  margin: 20vh auto;
 }
