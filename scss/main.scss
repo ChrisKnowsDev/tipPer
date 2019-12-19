@@ -10,7 +10,9 @@
 
 body {
   font-family: 'Courier Prime', monospace;
-  color: #333;
+  background: $dark-color;
+  color: $primary-color;
+  padding: 1rem;
 }
 
 ul {
@@ -21,22 +23,55 @@ a {
   text-decoration: none;
 }
 
-input {
+input[type='number'],
+input[type='text'] {
   display: block;
   width: 100%;
-}
-
-
-// Form styling
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  background-color: $medium-color;
+  font-size: 1.3rem;
+  color: $dark-color;
+  padding: 1rem;
   text-align: center;
 }
 
-// #results {
-//   display: none;
-// }
+// Form styling
+.container {
+  max-width: $max-width;
+  margin: 10vh auto 0;
+  background-color: $medium-color;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.9);
+}
+
+form .money {
+  color: $primary-color;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5%;
+  align-self: center;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  span {
+    align-self: center;
+    font-size: 1.3rem;
+  }
+}
+
+#results {
+  display: none;
+  margin-top: 1rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+
+}

@@ -14,32 +14,32 @@
 <body>
   <div class="container">
     <!-- Title -->
-    <h1 class="title">tipPer</h1>
+    <h1 class="title text-center">tipPer</h1>
 
     <!-- Tip form -->
     <form id="tip-form">
-      <div class="group">
-        <i class="fas fa-dollar-sign"></i>
+      <div class="group group-a">
+        <span>Bill</span>
         <input type="text" id="bill-input" placeholder="Bill Amount" />
       </div>
 
-      <div class="group">
-        <input type="number" id="tip-input" placeholder="Tip Amount" />
-        <span id="tip-output"></span>
+      <div class="group group-b">
+        <span>Tip%</span>
+        <input type="number" id="tip-input" placeholder="Tip %" />
       </div>
       <input type="submit" value="Submit" id="submit" class="btn-primary" />
     </form>
 
     <!-- Results  -->
     <div id="results">
-      <h3>Results</h3>
-      <div class="group">
-        <span>Tip Amount</span>
+      <h3 class="text-center">Results</h3>
+      <div class="group group-c">
+        <span>Tip:</span>
         <input type="number" id="tip-results" disabled />
       </div>
 
-      <div class="group">
-        <span>Total With Tip</span>
+      <div class="group group-d">
+        <span>Total:</span>
         <input type="number" id="bill-total" disabled />
       </div>
     </div>
