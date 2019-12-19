@@ -20,6 +20,9 @@ function calculateBill(e) {
     // Add tip to bill
     billPlusTip = bill + tipAmount;
 
+  // Display percentage value in UI
+  tipOutput.innerHTML = `${tax}%`;
+
   // Display result values
   tipResults.value = tipAmount.toFixed(2);
   billTotal.value = billPlusTip.toFixed(2);
