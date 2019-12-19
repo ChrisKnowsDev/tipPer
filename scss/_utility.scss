@@ -1,0 +1,37 @@
+// Text
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-primary {
+    color: $primary-color;
+  }
+
+  &-secondary {
+    color: $secondary-color;
+  }
+}
+
+// Buttons
+%btn-shared {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 3px;
+}
+
+.btn {
+  &-primary {
+    @extend %btn-shared;
+    background: $primary-color;
+  }
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
