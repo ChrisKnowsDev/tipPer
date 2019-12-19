@@ -11,6 +11,14 @@ const form = document.getElementById('tip-form'),
 form.addEventListener('submit', calculateBill);
 
 function calculateBill(e) {
-  console.log('Clicked');
+  const bill = Number(billInput.value),
+    tax = Number(tipInput.value),
+    tipAmount = bill * (tax / 100),
+    billPlusTip = bill + tipAmount;
+
+  tipResults.value = tipAmount.toFixed(2);
+  billTotal.value = billPlusTip.toFixed(2);
+
+  results.style.display = 'block';
   e.preventDefault();
 }
