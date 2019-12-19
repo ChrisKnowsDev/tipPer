@@ -6,3 +6,11 @@ const form = document.getElementById('tip-form'),
   results = document.getElementById('results'),
   tipResults = document.getElementById('tip-results'),
   billTotal = document.getElementById('bill-total');
+
+// Listen for form submit
+form.addEventListener('submit', calculateBill);
+
+function calculateBill(e) {
+  console.log('Clicked');
+  e.preventDefault();
+}
