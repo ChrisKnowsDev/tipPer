@@ -20,6 +20,10 @@ function calculateBill(e) {
     // Add tip to bill
     billPlusTip = bill + tipAmount;
 
+  // Clear values
+  billInput.value = '';
+  tipInput.value = '';
+
   // Display result values
   tipResults.value = tipAmount.toFixed(2);
   billTotal.value = billPlusTip.toFixed(2);
